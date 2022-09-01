@@ -1,3 +1,12 @@
+let num__pi = 3.14
+console.log(num__pi)
+
+let Nombre = "Exequiel"
+const Espacio = " "
+let Apellido = "Guardia"
+let Res = Nombre + Espacio + Apellido
+console.log(Res)
+
 let num = parseInt(prompt("ingrese un numero para multiplicar del 0 al 10"))
                         //i++=(index = index + 1)
 for(let i=0 ; i <= 10 ; i++ ){ 
