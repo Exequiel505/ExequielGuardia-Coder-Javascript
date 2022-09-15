@@ -1,12 +1,8 @@
-let opcion = prompt("Bienvenido a la pagina escriba si para llevarse Creatina, proteina y aminoacidos con un descuento del 10% de otra manera escriba no")
+let opcion = prompt("Bienvenido a la pagina escriba si para llevarse Creatina, proteina y aminoacidos con un descuento del 10% de otra manera abandone la pagina")
 
 if ( opcion == "si" ) {
 
     alert("Muchas gracias")
-    
-} else {
-
-    window.close()
     
 }
 
