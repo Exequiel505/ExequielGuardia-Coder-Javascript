@@ -1,10 +1,10 @@
-let opcion = prompt("Bienvenido a la pagina escriba si para llevarse Creatina, proteina y aminoacidos con un descuento del 10% de otra manera abandone la pagina")
+// let opcion = prompt("Bienvenido a la pagina escriba si para llevarse Creatina, proteina y aminoacidos con un descuento del 10% de otra manera abandone la pagina")
 
-if ( opcion == "si" ) {
+//  if ( opcion == "si" ) {
 
-    alert("Muchas gracias")
+//     alert("Muchas gracias")
     
-}
+// }
 
 let productos = []
 
@@ -55,7 +55,32 @@ let descuento = (acum) => {
     
 };
 
-document.write( "su precio final es de = $" + sumarPrecioProductos(productos) ) 
+document.write( "su precio final es de = $" + sumarPrecioProductos(productos) );
+
+
+const elementos = document.getElementsByClassName("btnProducto");
+
+for (const el of elementos) {
+
+    el.addEventListener("click",crear)
+    
+};
+
+function crear (){
+
+    let tr = document.createElement("tr")
+    let td1 = document.createElement("td")
+    let td2 = document.createElement("td")
+    let td3 = document.createElement("td")
+    tr.appendChild(td1)
+    tr.appendChild(td2)
+    tr.appendChild(td3) 
+    document.getElementById("compras").appendChild(tr)
+    td1.innerHTML = "Proteina"
+    td2.innerHTML = "1"
+    td3.innerHTML = "$2000"
+}
+
 
 
 // let suma = (num1, num2) => {
@@ -66,6 +91,4 @@ document.write( "su precio final es de = $" + sumarPrecioProductos(productos) )
 
 // document.write(`${suma()} <br>`)
 
-
-// let eleccion = setTimeout( () => prompt("Hola escriba que productos de la lista desea comprar"),1000)
 
